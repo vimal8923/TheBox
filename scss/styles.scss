@@ -1,13 +1,60 @@
+// COLOR THEME
+
+$accent:#F9995D;
+
+$custom_theme_colors:(
+"accent":$accent
+);
+
+// CONTAINER
+
+$custom_container-max-widths: (
+xl:1231px,
+xxl: 1400px,
+);
 
 
+
+// FONT FAMILY
+$font-family-base:"Work Sans", sans-serif;
+$headings-color:#14171F;
 
 
 
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
 
+// FONT-SIZE
+$h1-font-size:                $font-size-base * 4.5 ;
+$h2-font-size:                $font-size-base * 2.25 ;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base * 1.125 ;
+$h6-font-size:                $font-size-base ;
+
+// THEME COLOR MAP-MERGE
+$theme-colors:map-merge($map1:$theme-colors, $map2:$custom_theme_colors);
+
+//CONTAINER MAP MERGE
+$container-max-widths:map-merge($map1: $container-max-widths, $map2:$custom_container-max-widths );
 
 
+// BUTTON
+$btn-border-radius:0.25em;  
+$btn-border-radius-sm: 0.125em;
 
+// Contact Us Padding
+$custom_submit_btn-padding-y:1rem;
+$custom_submit_btn-padding-y:6.4375rem;
+
+// Subscribe Padding
+$btn-padding-y-sm:0.625rem;          
+$btn-padding-x-sm:1.4375rem;   
+
+// Submit padding
+$btn-padding-y-lg:1rem;         
+$btn-padding-x-lg:6.4375rem; 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import'./header';
