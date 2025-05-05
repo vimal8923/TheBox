@@ -1,13 +1,13 @@
 // COLOR THEME
 
 $accent:#F9995D;
+$headings-color:#14171F;
 
 $custom_theme_colors:(
 "accent":$accent
 );
 
 // CONTAINER
-
 $custom_container-max-widths: (
 xl:1231px,
 xxl: 1400px,
@@ -17,20 +17,31 @@ xxl: 1400px,
 
 // FONT FAMILY
 $font-family-base:"Work Sans", sans-serif;
-$headings-color:#14171F;
 
 
 
-@import '../node_modules/bootstrap/scss/functions';
-@import '../node_modules/bootstrap/scss/variables';
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import '../node_modules/bootstrap/scss/nav';
 
 // FONT-SIZE
-$h1-font-size:                $font-size-base * 4.5 ;
-$h2-font-size:                $font-size-base * 2.25 ;
-$h3-font-size:                $font-size-base * 1.5;
-$h4-font-size:                $font-size-base * 1.25;
-$h5-font-size:                $font-size-base * 1.125 ;
-$h6-font-size:                $font-size-base ;
+$h1-font-size: $font-size-base * 4.5;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.125;
+$h6-font-size: $font-size-base ;
+$h7-font-size: $font-size-base * .875;
+
+$cuctom_font-size: (
+    7: $h7-font-size
+);
+
+$font-sizes: map-merge($map1: $font-sizes, $map2: $cuctom_font-size);
+
+
 
 // THEME COLOR MAP-MERGE
 $theme-colors:map-merge($map1:$theme-colors, $map2:$custom_theme_colors);
@@ -55,6 +66,9 @@ $btn-padding-x-sm:1.4375rem;
 $btn-padding-y-lg:1rem;         
 $btn-padding-x-lg:6.4375rem; 
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// nav font size
+$nav-link-font-size: $h7-font-size;
 
-@import'./header';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./header";
+@import "./about";

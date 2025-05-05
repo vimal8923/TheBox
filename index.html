@@ -1,63 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.min.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-xl">
-          <a class="navbar-brand" href="#" aria-label="Go to home page"
-            ><img src="./image/mainLogo.svg" alt="Main Logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-            </ul>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#" aria-label="Go to home page"><img src="./image/mainLogo.svg"
+            alt="Jadoo Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll align-items-lg-center"
+            style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+      <section class="hero-banner position-relative">
+        <img src="./image/Hero.png" alt="Building image"
+          class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
+        <div class="container-fluid position-relative">
+          <div class="row min-vh-100 align-items-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+              <div class="hero-content p-4 rounded">
+                <h1 class="fw-bold mb-4 ">Building things is our mission.</h1>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      </section>
+
+      <section class="our-reputation py-5">
+        <div class="container-xl">
+          <h2 class="text-center fw-bold mb-5">Our Reputation</h2>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card h-100 p-4 border-1 shadow-sm">
+                <div class="mb-4">
+                  <img src="./image/icon1.svg" alt="Best Services Icon" class="img-fluid">
+                </div>
+                <h5 class="card-title fw-bold mb-3">Best Services</h5>
+                <p class="card-text text-muted">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 p-4 border-1 shadow-sm">
+                <div class="mb-4">
+                  <img src="./image/icon1.svg" alt="Best Teams Icon" class="img-fluid">
+                </div>
+                <h5 class="card-title fw-bold mb-3">Best Teams</h5>
+                <p class="card-text text-muted">Cursus semper tellus volutpat aliquet lacus.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 p-4 border-1 shadow-sm">
+                <div class="mb-4">
+                  <img src="./image/icon2.svg" alt="Best Designs Icon" class="img-fluid">
+                </div>
+                <h5 class="card-title fw-bold mb-3">Best Designs</h5>
+                <p class="card-text text-muted">Ultricies at ipsum nunc, tristique nam lectus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us py-5 position-relative">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-lg-8 position-relative">
+              <img src="./image/menimage.png" alt="About Us" class="img-fluid rounded about-us-image">
+            </div>
+            <div class="col-lg-6 position-absolute end-0 top-50 translate-middle-y ">
+              <div class="about-us-content bg-primary text-white p-4 ">
+                <h2 class="mb-4 fw-bold text-white">About us</h2>
+                <p>For more than 30 years we have been delivering world-class construction and we've built many lasting relationships along the way.</p>
+                <p>We've matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+                <a href="#" class="btn btn-light mt-3">More on Our History</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      crossorigin="anonymous"></script>
+</body>
+
 </html>

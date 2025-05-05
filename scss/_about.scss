@@ -1,0 +1,44 @@
+.about-us {
+    overflow: hidden;
+  
+    .about-us-image {
+      max-width: 90%;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+  
+    .about-us-content {
+      background-color: #2947A9 ;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  
+      @media (max-width: 991px) {
+        position: static ;
+        transform: none ;
+        margin-top: 2rem;
+      }
+  
+      h2 {
+        font-size: 36px;
+      }
+  
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+  
+      .btn-light {
+        color: #2947A9;
+        font-weight: bold;
+        border: none;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background-color: #fff;
+          color: #2947A9;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
