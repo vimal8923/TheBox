@@ -1,0 +1,30 @@
+$primary-color: #1e3a8a;
+
+.contact-form {
+  background-color: #f7fcf9;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  input,
+  select,
+  textarea {
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      border-color: darken($primary-color, 10%);
+    }
+  }
+}

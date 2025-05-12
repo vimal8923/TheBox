@@ -48,7 +48,7 @@
 
   <main>
     <main>
-      <section class="hero-banner position-relative">
+      <section class="hero-banner position-relative col-sm-12">
         <img src="./image/Hero.png" alt="Building image"
           class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
         <div class="container-fluid position-relative">
@@ -97,23 +97,111 @@
         </div>
       </section>
 
-      <section class="about-us py-5 position-relative">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-lg-8 position-relative">
-              <img src="./image/menimage.png" alt="About Us" class="img-fluid rounded about-us-image">
-            </div>
-            <div class="col-lg-6 position-absolute end-0 top-50 translate-middle-y ">
-              <div class="about-us-content bg-primary text-white p-4 ">
-                <h2 class="mb-4 fw-bold text-white">About us</h2>
-                <p>For more than 30 years we have been delivering world-class construction and we've built many lasting relationships along the way.</p>
-                <p>We've matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
-                <a href="#" class="btn btn-light mt-3">More on Our History</a>
+      <section class="container-xl py-5">
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0 z-1">
+            <img src="./image/menimage.png" alt="About Us" class="img-fluid w-100">
+          </div>
+      
+          <!-- Text Section -->
+          <div class="col-12 col-md-6">
+            <div class="bg-primary text-white p-4 rounded shadow-lg h-100 d-flex flex-column justify-content-between ">
+              <div>
+                <h2 class="fw-bold text-white">About us</h2>
+                <p>
+                  For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way.
+                </p>
+                <p>
+                  We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.
+                </p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-light text-primary fw-semibold mt-3">More on Our History</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      
+      <section class="contact-form container-xl py-5">
+        <h2 class="text-center fw-bold mb-3">What can us do for you?</h2>
+        <p class="text-center mb-4">
+          We are ready to work on a project of any complexity, whether it’s commercial or residential.
+        </p>
+        <form>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Your Name*" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email*" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <select class="form-select" required>
+                <option value="">Reason for Contacting*</option>
+                <option value="quote">Request a Quote</option>
+                <option value="consultation">Schedule Consultation</option>
+                <option value="support">Support</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="form-control" placeholder="Phone">
+            </div>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+          </div>
+          <p class="text-muted small mb-3">* indicates a required field</p>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5">Submit</button>
+          </div>
+        </form>
+      </section>
+      
+
+      <footer class="footer py-5">
+        <div class="container-fluid">
+          <div class="row gy-4">
+            <div class="col-md-6 col-lg-4">
+              <h6 class="footer-label">ADDRESS:</h6>
+              <address class="footer-text d-inline-block">6391 Elgin St. Celina, Delaware 10299</address>
+      
+              <h6 class="footer-label">PHONE:</h6>
+              <a class="footer-text text-decoration-none text-black" href="#">+84 1102 2703</a>
+             <div>
+              <h6 class="footer-label ">EMAIL:</h6>
+              <a class="footer-text text-decoration-none m-2 text-black" href="#">hello@thebox.com</a>
+            </div>
+              <div class="logo d-flex align-items-center mt-3">
+                <img src="./image/mainLogo.svg" alt="TheBox Logo" height="40" class="me-2" />
+                
+              </div>
+            </div>
+      
+            <div class="col-md-6 col-lg-4 offset-lg-4">
+              <h6 class="footer-label">NEWSLETTER:</h6>
+              <form class="d-flex mb-3">
+                <input type="email" class="form-control me-2" placeholder="Your email here" />
+                <button type="submit" class="btn btn-warning">Subscribe</button>
+              </form>
+      
+              <h6 class="footer-label">SOCIAL:</h6>
+              <div class="d-flex gap-3">
+                <a href="#" class="social-icon"><img src="./image/facebook.svg" alt="" srcset=""></a>
+                <a href="#" class="social-icon"><img src="./image/linkedin.svg" alt=""></a>
+                <a href="#" class="social-icon"><img src="./image/twitter.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="last-footer text-start mt-4 col-lg-12 p-3  text-white">
+            TheBox Company © 2022. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+      
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
