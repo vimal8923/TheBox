@@ -1,18 +1,52 @@
-$primary: #2947A9; // Matches the dark blue used in the image design
-
-.btn-light {
-  color: $primary;
-  font-weight: 600;
-  &:hover {
-    background-color: lighten($primary, 15%);
-    color: #fff;
+.about-section {
+  .card-body {
+    background-color: $primary-blue;
   }
-}
 
-// Optional: Improve vertical spacing on small screens
-@media (max-width: 576px) {
-  .btn {
-    width: 100%;
-    text-align: center;
+  .btn-primary {
+    color: $primary-blue;
+  }
+
+  .about-section-card {
+    max-height: 523px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .card-body {
+      padding: 1.5rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: lighten($primary-blue, 20%);
+      }
+    }
+
+    p {
+      font-size: $h5-font-size;
+    }
+
+    @media (min-width: 1400px) {
+      margin-top: 70px;
+      margin-left: -160px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      margin-top: 90px;
+      margin-left: -140px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      margin-top: 20px;
+      margin-left: -160px;
+    }
+
+    @media (max-width: 991.98px) {
+      width: 100%;
+      margin: 5px auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
   }
 }

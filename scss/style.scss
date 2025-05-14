@@ -1,22 +1,38 @@
 // COLOR THEME
+$primary-blue: #2947A9;
+$headings-color: #14171F; 
+$accent: #F9995D;
 
-$accent:#F9995D;
-$headings-color:#14171F;
+// Text Colors
+$text-dark: #3D445C;
+$text-light: #7f8c8d;
+$text-white: #ffffff;
 
-$custom_theme_colors:(
-"accent":$accent
+$custom-theme-colors: (
+  "text-dark": $text-dark,
+  "text-light": $text-light,
+  "text-white": $text-white,
 );
+
+$custom_theme_colors: (
+  "accent":$accent
+);
+
+$custom-theme-colors: (
+  "primary": $primary-blue
+);
+
 
 // CONTAINER
 $custom_container-max-widths: (
-xl:1231px,
-xxl: 1400px,
+  xl:1231px,
+  xxl: 1400px,
 );
 
 
 
 // FONT FAMILY
-$font-family-base:"Work Sans", sans-serif;
+$font-family-base: "Work Sans", sans-serif;
 
 
 
@@ -28,15 +44,17 @@ $font-family-base:"Work Sans", sans-serif;
 
 // FONT-SIZE
 $h1-font-size: $font-size-base * 4.5;
-$h2-font-size: $font-size-base * 2.25;
+$h2-font-size: $font-size-base * 3.75;
 $h3-font-size: $font-size-base * 1.5;
 $h4-font-size: $font-size-base * 1.25;
 $h5-font-size: $font-size-base * 1.125;
 $h6-font-size: $font-size-base ;
 $h7-font-size: $font-size-base * .875;
+$h8-font-size: $font-size-base * 2.25;
 
 $cuctom_font-size: (
-    7: $h7-font-size
+  7: $h7-font-size,
+  8: $h8-font-size
 );
 
 $font-sizes: map-merge($map1: $font-sizes, $map2: $cuctom_font-size);
@@ -44,27 +62,11 @@ $font-sizes: map-merge($map1: $font-sizes, $map2: $cuctom_font-size);
 
 
 // THEME COLOR MAP-MERGE
-$theme-colors:map-merge($map1:$theme-colors, $map2:$custom_theme_colors);
+$theme-colors: map-merge($map1: $theme-colors, $map2: $custom_theme_colors);
 
 //CONTAINER MAP MERGE
-$container-max-widths:map-merge($map1: $container-max-widths, $map2:$custom_container-max-widths );
+$container-max-widths: map-merge($map1: $container-max-widths, $map2: $custom_container-max-widths );
 
-
-// BUTTON
-$btn-border-radius:0.25em;  
-$btn-border-radius-sm: 0.125em;
-
-// Contact Us Padding
-$custom_submit_btn-padding-y:1rem;
-$custom_submit_btn-padding-y:6.4375rem;
-
-// Subscribe Padding
-$btn-padding-y-sm:0.625rem;          
-$btn-padding-x-sm:1.4375rem;   
-
-// Submit padding
-$btn-padding-y-lg:1rem;         
-$btn-padding-x-lg:6.4375rem; 
 
 // nav font size
 $nav-link-font-size: $h7-font-size;
@@ -75,3 +77,20 @@ $nav-link-font-size: $h7-font-size;
 @import "./footer";
 @import "./form";
 @import "./experience";
+@import "./consultation";
+@import "./project";
+
+.hero-section .btn-group {
+  width: 416px;
+  z-index: 1;
+}
+
+.hero-section .carousel-caption {
+  width: 416px;
+  right: 0;
+  left: auto;
+  bottom: 2.5rem;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+}

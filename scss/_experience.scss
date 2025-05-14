@@ -1,79 +1,86 @@
-.experience {
-  background-color: #F6F8F7;
+h2 {
+    color: $primary-blue;
+}
+.btn-contact {
+    background-color: $primary-blue;
+    
+   
+}
 
-  .experience-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+.Years-Experience {
+    .h2 {
+        color: #2947A9;
+    }
 
-    .stat-item {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      position: relative;
-      overflow: hidden;
+    .card-1 {
+        max-width: 280px;
+    }
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
+    .card-3 {
+        max-width: 280px;
+    }
+
+    .card-2 {
+        max-width: 361px;
+    }
+
+    .card-4 {
+        max-width: 361px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .card-1 {
+        top: 20px;
+        right: 80px;
+
+    }
+
+    .card-2 {
+        top: -30px;
         left: 0;
-        width: 4px;
-        height: 100%;
-        background-color: $accent;
-      }
-
-      .stat-number {
-        font-size: 3rem;
-        font-weight: 600;
-        color: $headings-color;
-        margin-bottom: 0.5rem;
-      }
-
-      .stat-label {
-        font-size: 1rem;
-        color: #667299;
-      }
-    }
-  }
-
-  .experience-content {
-    h2 {
-      color: $headings-color;
-      font-weight: 700;
     }
 
-    p {
-      color: #667299;
+    .card-3 {
+        top: -40px;
+        right: 80px;
+
     }
 
-    .btn-primary {
-      background-color: #2947A9;
-      border-color: #2947A9;
-      padding: 0.75rem 2rem;
-      font-weight: 600;
-
-      &:hover {
-        background-color: darken(#2947A9, 10%);
-        border-color: darken(#2947A9, 10%);
-      }
+    .card-4 {
+        top: -60px;
+        left: 0;
     }
-  }
+
+    .icon-5 {
+        top: -50px;
+        right: 40px;
+    }
+
+    .icon-6 {
+        top: 40px;
+        left: 0;
+    }
+
+    .icon-7 {
+        top: 170px;
+        right: 60px;
+    }
+
+    .icon-8 {
+        bottom: 20px;
+        right: 320px
+    }
+
+    .Experience {
+        padding: 70px;
+
+    }
 }
 
-@media (max-width: 991.98px) {
-  .experience {
-    .experience-stats {
-      margin-bottom: 2rem;
+@media (max-width: 1199px) {
+    .icon-5,.icon-6,.icon-7,.icon-8 {
+        display: none;
     }
-  }
-}
-
-@media (max-width: 575.98px) {
-  .experience {
-    .experience-stats {
-      grid-template-columns: 1fr;
-    }
-  }
 }

@@ -1,0 +1,66 @@
+.consultation-section {
+    height: 300px;
+    padding: 1rem;
+
+    h5 {
+        font-size: $h8-font-size;
+    }
+
+    p {
+        font-size: $h3-font-size;
+    }
+
+    .get-button {
+        border-radius: 2px;
+        font-size: $h3-font-size;
+        padding: 0.5rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 0.75rem;
+
+        h5 {
+            font-size: calc($h8-font-size * 0.9);
+        }
+
+        p {
+            font-size: calc($h3-font-size * 0.9);
+        }
+
+        .get-button {
+            font-size: calc($h3-font-size * 0.9);
+        }
+    }
+
+    @media (max-width: 576px) {
+        height: auto;
+        padding: 0.5rem;
+
+        h5 {
+            font-size: calc($h8-font-size * 0.8);
+        }
+
+        p {
+            font-size: calc($h3-font-size * 0.8);
+        }
+
+        .get-button {
+            font-size: calc($h3-font-size * 0.8);
+        }
+    }
+
+    @media (max-width: 400px) {
+        h5 {
+            font-size: calc($h8-font-size * 0.7);
+        }
+
+        p {
+            font-size: calc($h3-font-size * 0.7);
+        }
+
+        .get-button {
+            font-size: calc($h3-font-size * 0.7);
+        }
+    }
+}
